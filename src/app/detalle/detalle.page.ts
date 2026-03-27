@@ -17,16 +17,16 @@ import { Elemento } from '../models/elemento.model';
 })
 export class DetallePage implements OnInit {
 
-  // TODO (Apartado 3 – Interpolación): Usar {{ elemento?.nombre }} en el HTML
-  elemento: Elemento | null = null;
+  // TODO (Apartado 3 – Interpolación): Usar {{ elementoDetalle.nombre }} en el HTML
+  elementoDetalle: Elemento | null = null;
 
   constructor(private router: Router) {}
 
   ngOnInit(): void {
     // Recuperar el elemento pasado desde la página anterior mediante el estado de navegación
     const state = history.state;
-    if (state?.elemento) {
-      this.elemento = state.elemento;
+    if (state?.elementoHome) {
+      this.elementoDetalle = state.elementoHome;
     }
   }
 }
