@@ -4,7 +4,7 @@ import {
   IonHeader, IonToolbar, IonTitle, IonContent, IonFooter,
   IonList, IonItem, IonLabel, IonButton, IonInput,
   ToastController
-} from '@ionic/angular/standalone';
+} from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { Elemento } from '../models/elemento.model';
 
